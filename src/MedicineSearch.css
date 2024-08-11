@@ -1,0 +1,49 @@
+
+.medicine-search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.medicine-list {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.medicine-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.medicine-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.medicine-item p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.no-results {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
+

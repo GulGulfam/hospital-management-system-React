@@ -1,0 +1,159 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  background-color: #007bff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-lists li {
+  margin: 0;
+  color: #000000; 
+  border-radius: 5px; 
+  padding: 0rem 0rem; 
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-lists li.active {
+  background-color: #007bff; 
+  color: #ffffff; 
+  border-color: #007bff;
+}
+
+.nav-lists li.active button {
+  color: #ffffff; 
+}
+
+.nav-lists li button {
+  border: none;
+  font-size: 1.1rem; 
+  cursor: pointer; 
+  padding: 0.5rem 1rem; 
+}
+
+.nav-lists li button:hover {
+  text-decoration: underline; 
+}
+
+.search-container {
+  margin-left: auto; 
+}
+
+.search-container input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  width: 250px; 
+}
+
+main {
+  padding: 2rem;
+  margin-top: 4rem; 
+  background-color: #f0f0f0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 800px; 
+}
+
+.add-patient-form, .edit-patient-form {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.add-patient-form input, .edit-patient-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-patient-form button, .edit-patient-form button {
+  background: black; 
+  color: white;
+  border: none; 
+  font-size: 1.1rem; 
+  cursor: pointer;
+  padding: 0.5rem 1rem; 
+}
+
+.add-patient-form button:hover, .edit-patient-form button:hover {
+  background: #333; 
+}
+
+.patient-list {
+  width: 100%;
+  max-width: 800px; 
+}
+
+.patient-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.patient-list li {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.patient-list button {
+  background: black; 
+  border: none; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  padding: 0.5rem 1rem; 
+  margin-right: 0.5rem; 
+}
+
+.patient-list button:hover {
+  background: #333; 
+}
+
+

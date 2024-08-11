@@ -1,0 +1,111 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: #007bff;
+  /* color: white; */
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-lists li {
+  margin: 0;
+  cursor: pointer;
+}
+
+.nav-lists li a {
+  /* color: white; */
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-lists li.active a {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+.nav-lists li a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  margin-left: auto;
+}
+
+.search-container input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  width: 250px;
+}
+
+main {
+  padding: 2rem;
+  flex: 1;
+  /* background-color: #f0f0f0; */
+  overflow-y: auto;
+}
+
+.dashboard-content {
+  /* background-color: #ffffff; */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.patient-data h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.metric p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.metric span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #007bff;
+}
